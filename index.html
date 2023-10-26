@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roti</title>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Icon -->
+    <script
+      src="https://kit.fontawesome.com/d2cf505fc4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="nav-box">
+      <div class="nav-logo">Roti</div>
+      <nav class="nav-link">
+        <!-- Hamburger Navbar -->
+        <input type="checkbox" id="hamburger-btn" />
+        <label for="hamburger-btn" class="hamburger-btn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <!-- Wide Navbar -->
+        <div class="link">
+          <a href="#">Home</a>
+          <a href="#about-us">About Us</a>
+          <a href="#our-menu">Our Menu</a>
+          <a href="#find-us">Find Us in Your City</a>
+          <a href="#contact-us">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Start of image slider -->
+      <div class="greetings-flex">
+        <div class="greetings">
+          <div class="slides">
+            <!-- Radio button start -->
+            <input type="radio" name="radio-btn" id="slide1" />
+            <input type="radio" name="radio-btn" id="slide2" />
+            <input type="radio" name="radio-btn" id="slide3" />
+            <input type="radio" name="radio-btn" id="slide4" />
+            <!-- Radio button end -->
+            <!-- Slide image start -->
+            <div class="slide first">
+              <img id="img1" src="assets/greetings-slide1.jpg" alt="Slide 1" />
+            </div>
+            <div class="slide">
+              <img id="img2" src="assets/greetings-slide2.jpg" alt="Slide 2" />
+            </div>
+            <div class="slide">
+              <img id="img3" src="assets/greetings-slide3.jpg" alt="Slide 3" />
+            </div>
+            <div class="slide">
+              <img id="img4" src="assets/greetings-slide4.jpg" alt="Slide 4" />
+            </div>
+            <!-- Slide image end -->
+            <!-- Automatic navigation start -->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            <!-- Automatic navigation end -->
+          </div>
+          <!-- Manual navigation start -->
+          <div class="navigation-manual">
+            <label for="slide1" class="manual-btn"></label>
+            <label for="slide2" class="manual-btn"></label>
+            <label for="slide3" class="manual-btn"></label>
+            <label for="slide4" class="manual-btn"></label>
+          </div>
+          <!-- Manual navigation end -->
+        </div>
+      </div>
+      <!-- End of image slider -->
+
+      <!-- Banner Slide JS -->
+      <script src="js/script.js"></script>
+
+      <div class="about-us" id="about-us">
+        <h2>About Us</h2>
+        <div class="about-us-grid">
+          <div class="about-us-desc">
+            <p>
+              <span>Roti</span>is the very first Indonesian homemade bread and
+              cookies that certified with gluten-free product. Made with the
+              finest ingredients nature can provide. Taste home in every bites.
+            </p>
+            <h3>"Sincerely, made with love for the loved ones."</h3>
+          </div>
+          <div class="about-us-img">
+            <img src="assets/grid-1.jpg" alt="Roti-1" />
+            <img src="assets/grid-2.jpg" alt="Roti-2" />
+            <img src="assets/grid-3.jpg" alt="Roti-3" />
+            <img src="assets/grid-4.jpg" alt="Roti-4" />
+            <img src="assets/grid-5.jpg" alt="Roti-5" />
+            <img src="assets/grid-6.jpg" alt="Roti-6" />
+          </div>
+        </div>
+      </div>
+      <div class="our-menu" id="our-menu">
+        <h2>Our Menu</h2>
+        <div class="card-menu">
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="assets/baguette.jpg" alt="Baguette" />
+            </div>
+            <div class="menu-desc">
+              <h3>Baguette</h3>
+              <p>Rp. 42.500,-</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="assets/croissant.jpg" alt="Croissant" />
+            </div>
+            <div class="menu-desc">
+              <h3>Croissant</h3>
+              <p>Rp. 25.500,-</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="assets/choco-cookies.jpg" alt="Choco Cookies" />
+            </div>
+            <div class="menu-desc">
+              <h3>Choco Cookies</h3>
+              <p>Rp. 32.500,-</p>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div class="find-us" id="find-us">
+        <h2>Find Us in Your City</h2>
+        <div class="find-city">
+          <div class="city">
+            <img src="/assets/hq-jakarta.jpg" alt="jakarta" />
+            <h3>Jakarta</h3>
+            <p>Jl. H.R. Kemarin No. 4</p>
+            <p>Phone (021) 567 33x xx</p>
+          </div>
+          <div class="city">
+            <img src="/assets/hq-bandung.webp" alt="bandung" />
+            <h3>Bandung</h3>
+            <p>Jl. Kenangan No. 17A</p>
+            <p>Phone (022) 345 55x xx</p>
+          </div>
+          <div class="city">
+            <img src="/assets/hq-surabaya.jpg" alt="surabaya" />
+            <h3>Surabaya</h3>
+            <p>Jl. Tunjangan No. 41-42</p>
+            <p>Phone (031) 456 77x xx</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form" id="contact-us">
+        <h2>Send us a message</h2>
+        <form class="form" action="" method="post">
+          <div class="label-input">
+            <!-- Fullname -->
+            <div>
+              <label for="name">Fullname</label>
+            </div>
+            <div>
+              <span>:</span>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your fullname"
+                minlength="3"
+                maxlength="100"
+                required
+              />
+            </div>
+
+            <!-- Bussines Name -->
+            <div>
+              <label for="bussines-name">Bussines Name</label>
+            </div>
+            <div>
+              <span>:</span>
+            </div>
+            <div>
+              <input
+                type="text"
+                id="bussines-name"
+                name="bussines-name"
+                placeholder="Optional"
+              />
+            </div>
+
+            <!-- Phone Number -->
+            <div>
+              <label for="phone">Phone Number</label>
+            </div>
+            <div>
+              <span>:</span>
+            </div>
+            <div>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                pattern="(\+62|62|0)8[1-9][0-9]{6,9}$"
+                placeholder="+62 857 1234 xxxx"
+                required
+              />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="email-message">E-mail</label>
+            </div>
+            <div>
+              <span>:</span>
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email-message"
+                id="email-message"
+                placeholder="example@mail.com"
+                required
+              />
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label for="message">Message</label>
+            </div>
+            <div>
+              <span>:</span>
+            </div>
+            <div>
+              <input
+                type="textarea"
+                name="message"
+                id="message"
+                placeholder="Write your message here..."
+                minlength="3"
+                maxlength="300"
+                required
+              />
+            </div>
+          </div>
+          <button>Send</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-grid">
+        <div class="newsletter">
+          <label for="email-subscribe">Subscribe to our newsletter</label>
+          <div>
+            <input
+              type="email"
+              id="email-subscribe"
+              placeholder="example@mail.com"
+            />
+            <button>Subscribe</button>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <div>
+            <p>About</p>
+          </div>
+          <div>
+            <p>Corporate Gifting</p>
+          </div>
+          <div>
+            <p>Partnership</p>
+          </div>
+          <div>
+            <p>Refund Policy</p>
+          </div>
+          <div>
+            <p>Careers</p>
+          </div>
+          <div>
+            <p>Shipping Policy</p>
+          </div>
+        </div>
+        <div class="connect">
+          <h2>Connect with us</h2>
+          <div class="connect-icon">
+            <div><i class="fa-brands fa-instagram"></i></div>
+            <div><i class="fa-brands fa-facebook"></i></div>
+            <div><i class="fa-brands fa-twitter"></i></div>
+            <div><i class="fa-brands fa-tiktok"></i></div>
+          </div>
+        </div>
+      </div>
+      <div id="copyright">
+        <p>&copy Designed and Created by Nadya Fitriasari</p>
+      </div>
+    </footer>
+  </body>
+</html>

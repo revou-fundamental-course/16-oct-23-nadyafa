@@ -1,0 +1,593 @@
+/* Font Logo */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+
+/* Font Universal */
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playpen Sans", sans-serif;
+}
+
+/* Start of Navigation Bar */
+.nav-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5em 2em;
+  transition: 0.6s;
+  z-index: 99999;
+}
+
+header.nav-bg-color {
+  background-color: #1c1f1f;
+  box-shadow: 5px 3px 3px #363a3a;
+  padding: 0.5em 2em;
+}
+
+.nav-link {
+  display: flex;
+  gap: 5px;
+}
+
+.hamburger-btn {
+  display: none;
+  font-size: 1.5em;
+  color: white;
+  float: right;
+  cursor: pointer;
+}
+
+#hamburger-btn {
+  display: none;
+}
+
+#hamburger-btn:checked ~ .link {
+  left: 0%;
+}
+
+.nav-link a {
+  padding: 5px 1em;
+  min-width: 60px;
+  text-align: center;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.nav-logo {
+  font-family: "Caveat", cursive;
+  font-size: 2.5em;
+  color: whitesmoke;
+}
+/* End of Navigation Bar */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* start of greetings style */
+.greetings-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.greetings {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slides {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 100%;
+  transition: 2s;
+}
+
+.slide #img1 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center 76%;
+}
+
+.slide #img2 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center 65%;
+}
+
+.slide #img3 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center 70%;
+}
+
+.slide #img4 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Manual navigation */
+
+.navigation-manual {
+  position: absolute;
+  width: 100vw;
+  margin-top: -80px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.manual-btn {
+  border: 2px solid lightgray;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:hover {
+  background: lightgray;
+}
+
+#slide1:checked ~ .first {
+  margin-left: 0;
+}
+
+#slide2:checked ~ .first {
+  margin-left: -100%;
+}
+
+#slide3:checked ~ .first {
+  margin-left: -200%;
+}
+
+#slide4:checked ~ .first {
+  margin-left: -300%;
+}
+
+/* Automatic navigation */
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-top: calc(100vh - 80px);
+  gap: 40px;
+}
+
+.navigation-auto div {
+  border: 2px solid lightgray;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+#slide1:checked ~ .navigation-auto .auto-btn1 {
+  background: lightgray;
+}
+
+#slide2:checked ~ .navigation-auto .auto-btn2 {
+  background: lightgray;
+}
+
+#slide3:checked ~ .navigation-auto .auto-btn3 {
+  background: lightgray;
+}
+
+#slide4:checked ~ .navigation-auto .auto-btn4 {
+  background: lightgray;
+}
+
+/* start of about us style*/
+.about-us {
+  padding: 5.5em 0 5em 0;
+  background: whitesmoke;
+}
+
+.about-us h2 {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+}
+
+.about-us-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em 5em;
+  gap: 5em;
+}
+
+.about-us-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  align-self: center;
+}
+
+.about-us-desc p {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.about-us-desc span {
+  font-family: "Caveat", cursive;
+  font-size: 2.5em;
+  padding-right: 0.4em;
+}
+
+.about-us-desc h3 {
+  font-size: 2.5em;
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+}
+
+.about-us-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40vh 40vh;
+}
+
+.about-us-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* end of about us style*/
+
+/* start of our menu style*/
+.our-menu {
+  padding: 5.5em 5em 5.5em 5em;
+}
+
+.our-menu h2 {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+}
+
+.card-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+  padding-top: 2em;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  background: whitesmoke;
+  box-shadow: 5px 10px 3px lightgray;
+  padding: 2em 0;
+  border-radius: 5px 5px 15px 15px;
+  text-align: center;
+}
+
+.menu-item img {
+  height: 50vh;
+  width: 25vw;
+  object-fit: cover;
+}
+/* end of our menu style*/
+
+/* start of find us style*/
+.find-us {
+  padding: 6em 5em 11em 5em;
+  background: whitesmoke;
+}
+
+.find-us h2 {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+}
+
+.find-city {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 7em;
+}
+
+.city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.city img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+/* end of find us style*/
+
+/* start of message us style */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  padding: 5em 5em 5em 5em;
+}
+
+.contact-form h2 {
+  text-align: center;
+  font-size: 2.5em;
+  align-self: start;
+  padding-left: 3.5em;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+}
+
+.form button {
+  width: 100%;
+  padding: 0.5em 0;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.label-input {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+.label-input #name,
+#bussines-name,
+#phone,
+#email-message {
+  width: 60vw;
+  height: 2em;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-indent: 0.5em;
+}
+
+.label-input #message {
+  width: 60vw;
+  height: 7em !important;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-indent: 0.5em;
+}
+/* end of message us style */
+
+/* start footer styling */
+footer {
+  padding: 2em 5em 0 5em;
+  background-color: #1c1f1f;
+  color: whitesmoke;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+footer #copyright {
+  padding-top: 5em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.newsletter input {
+  width: 15em;
+  height: 2.3em;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-indent: 0.5em;
+}
+
+.newsletter button {
+  padding: 3px 12px;
+  border-radius: 5px;
+}
+
+.footer-menu {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connect h2 {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+}
+
+.connect-icon {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding-top: 1em;
+  gap: 2em;
+}
+
+.fa-brands {
+  font-size: 1.5em;
+}
+
+/* end footer styling */
+
+/* Media query for phone */
+@media only screen and (max-width: 768px) {
+  .hamburger-btn {
+    display: block;
+  }
+  .link {
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 65px);
+    top: 65px;
+    left: 100%;
+    background: rgb(28, 31, 31, 0.95);
+    transition: all 0.5s;
+  }
+  .link a {
+    display: block;
+    font-size: 2em;
+    padding: 1em 0;
+  }
+  .link a:hover {
+    background: rgb(158, 104, 5, 0.6);
+  }
+  .about-us,
+  h2 {
+    font-size: 80%;
+  }
+  .about-us-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-item img {
+    width: 70vw;
+    padding: 1.5em 1.5em 0.5em 1.5em;
+  }
+  .menu-item {
+    gap: 0.5em;
+  }
+  .find-city {
+    flex-direction: column;
+    gap: 5em;
+    padding-top: 5em;
+  }
+  .contact-form h2 {
+    padding-left: 0;
+  }
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+  }
+  .footer-menu {
+    column-gap: 5em;
+    row-gap: 0.5em;
+  }
+}
+
+/* Media query for potrait table */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-link a {
+    padding: 5px 0.6em;
+  }
+  .nav-link a:hover {
+    padding: 5px 0.6em;
+    min-width: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 25px;
+    background-color: #9e6805;
+  }
+  .about-us {
+    padding-bottom: 5em;
+  }
+  .about-us-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+  }
+  .menu-item img {
+    width: 50vw;
+    padding: 1.5em 1.5em 0.5em 1.5em;
+  }
+  .menu-item {
+    gap: 0.5em;
+  }
+  .find-city {
+    flex-direction: column;
+    gap: 5em;
+    padding-top: 5em;
+  }
+  .contact-form h2 {
+    padding-left: 0;
+  }
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+  }
+  .footer-menu {
+    grid-template-columns: auto auto auto;
+    column-gap: 5em;
+    row-gap: 0.5em;
+  }
+  .newsletter input {
+    width: 50vw;
+  }
+}
+
+/* Media query for large device */
+@media screen and (min-width: 1024px) {
+  .nav-link a:hover {
+    padding: 5px 1em;
+    min-width: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 25px;
+    background-color: #9e6805;
+  }
+}
